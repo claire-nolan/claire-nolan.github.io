@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Keep this while you do not want the site indexed -->
   <meta name="robots" content="noindex, nofollow">
 
-  <title>Claire Nolan — Technical Documentation for Humans & AI</title>
+  <title>Claire Nolan — Technical Documentation</title>
 
   <style>
     :root {
@@ -115,12 +114,20 @@
     }
 
     .hero-intro {
-      max-width: 760px;
+      max-width: 790px;
       margin: 0;
       font-size: clamp(18px, 1.75vw, 24px);
       font-weight: 300;
       line-height: 1.45;
       letter-spacing: -.015em;
+    }
+
+    .hero-intro p {
+      margin: 0 0 20px;
+    }
+
+    .hero-intro p:last-child {
+      margin-bottom: 0;
     }
 
     .hero-meta {
@@ -130,6 +137,17 @@
       line-height: 1.8;
       text-transform: uppercase;
       letter-spacing: .1em;
+    }
+
+    .hero-meta a {
+      color: var(--black);
+      text-decoration: none;
+      border-bottom: 1px solid var(--black);
+    }
+
+    .hero-meta a:hover {
+      color: var(--pink-dark);
+      border-color: var(--pink-dark);
     }
 
     .pink-strip {
@@ -229,47 +247,6 @@
       font-weight: 500;
     }
 
-    /* EXPERIENCE */
-
-    .done {
-      background: var(--cream);
-    }
-
-    .experience-item {
-      display: grid;
-      grid-template-columns: 210px 1fr;
-      gap: 70px;
-      padding: 45px 0 55px;
-      border-top: 1px solid var(--black);
-    }
-
-    .experience-date {
-      font-size: 11px;
-      font-weight: 500;
-      line-height: 1.75;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-    }
-
-    .experience-copy {
-      max-width: 900px;
-    }
-
-    .experience-copy h3 {
-      margin: 0 0 21px;
-      font-size: clamp(28px, 3.4vw, 46px);
-      font-weight: 300;
-      line-height: 1.05;
-      letter-spacing: -.04em;
-    }
-
-    .experience-copy p {
-      max-width: 820px;
-      margin: 0 0 18px;
-      font-size: 17px;
-      line-height: 1.6;
-    }
-
     /* CONTENT REARCHITECTURE */
 
     .rearchitecture {
@@ -337,6 +314,47 @@
       color: var(--pink-dark);
     }
 
+    /* EXPERIENCE */
+
+    .done {
+      background: var(--cream);
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 70px;
+      padding: 45px 0 55px;
+      border-top: 1px solid var(--black);
+    }
+
+    .experience-date {
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1.75;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .experience-copy {
+      max-width: 900px;
+    }
+
+    .experience-copy h3 {
+      margin: 0 0 21px;
+      font-size: clamp(28px, 3.4vw, 46px);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .experience-copy p {
+      max-width: 820px;
+      margin: 0 0 18px;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
     /* EDUCATION */
 
     .education {
@@ -368,6 +386,15 @@
       font-weight: 500;
       text-transform: uppercase;
       letter-spacing: .09em;
+    }
+
+    .footer-bottom a {
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--pink-dark);
     }
 
     .credit {
@@ -402,9 +429,9 @@
       .hero-bottom,
       .section-header,
       .work-item,
-      .experience-item,
       .project-body,
-      .skills {
+      .skills,
+      .experience-item {
         grid-template-columns: 1fr;
       }
 
@@ -426,8 +453,8 @@
         padding: 35px 0 43px;
       }
 
-      .experience-item,
-      .project-body {
+      .project-body,
+      .experience-item {
         gap: 28px;
       }
 
@@ -455,14 +482,17 @@
   <div class="wrap">
 
     <nav>
+
       <div>Claire Nolan</div>
 
       <div class="nav-links">
         <a href="#working">What I'm working on</a>
-        <a href="#done">What I've done</a>
+        <a href="#rearchitecture">Selected work</a>
         <a href="#know">What I know</a>
+        <a href="#done">Experience</a>
         <a href="#education">Education</a>
       </div>
+
     </nav>
 
 
@@ -484,17 +514,28 @@
 
       <div class="hero-bottom">
 
-        <p class="hero-intro">
-          I'm interested in how AI can expand and scale the technical
-          documentation role—and how connecting documentation more directly
-          to product, data, support, and other source knowledge can make the
-          content itself better.
-        </p>
+        <div class="hero-intro">
+
+          <p>
+            I'm interested in how AI can expand and scale the technical
+            documentation role—and how connecting documentation more directly
+            to product, data, support, and other source knowledge can make
+            the content itself better.
+          </p>
+
+          <p>
+            What I'm enjoying most about AI is how much it expands what I can
+            do myself—the agency to problem-solve, build, and try new things.
+          </p>
+
+        </div>
+
 
         <div class="hero-meta">
           Based in Dublin<br>
           US / Irish citizen<br>
-          Dublin office + US working hours
+          Dublin office + US working hours<br><br>
+          <a href="mailto:ceenolan@gmail.com">ceenolan@gmail.com</a>
         </div>
 
       </div>
@@ -502,6 +543,7 @@
     </header>
 
   </div>
+
 
   <div class="pink-strip"></div>
 
@@ -519,7 +561,7 @@
         </p>
 
         <h2>
-          Some of the ways we're using AI in documentation now.
+          Some of the things I'm working on with AI in documentation.
         </h2>
 
       </div>
@@ -544,7 +586,7 @@
         <div class="work-copy">
 
           <p>
-            Building a system that brings together documentation feedback
+            I'm building a system that brings together documentation feedback
             and signals from multiple sources, normalizes the data, applies
             a consistent impact-based priority, and routes work against the
             appropriate SLA.
@@ -579,20 +621,19 @@
         <div class="work-copy">
 
           <p>
-            AI gives us a much more direct relationship with the product
-            itself. Instead of relying primarily on individual SMEs,
+            AI gives documentation a much more direct relationship with the
+            product itself. Instead of relying primarily on individual SMEs,
             meetings, Slack, and other sources that can quickly become
-            incomplete or stale, we're connecting documentation work
+            incomplete or stale, I'm working to connect documentation
             directly to product repositories.
           </p>
 
           <p>
-            I'm currently bringing together repositories across product
-            teams so we can use them to identify documentation gaps,
-            validate docs against the product, track feature availability
-            and development, and follow features through GA and release.
-            It improves accuracy while reducing our dependence on
-            individual SMEs.
+            I'm currently bringing together repositories across product teams
+            so we can use them to identify documentation gaps, validate docs
+            against the product, track feature availability and development,
+            and follow features through GA and release. It improves accuracy
+            while reducing our dependence on individual SMEs.
           </p>
 
           <div class="example">
@@ -626,9 +667,9 @@
         <div class="work-copy">
 
           <p>
-            We've used automated checkpoints in our content governance for
-            years—for example, preventing work from closing until required
-            release and quality criteria are met.
+            I've used automated checkpoints in content governance for years—
+            for example, preventing work from closing until required release
+            and quality criteria are met.
           </p>
 
           <p>
@@ -645,7 +686,108 @@
   </section>
 
 
-  <!-- WHAT I'VE DONE -->
+  <!-- SELECTED WORK -->
+
+  <section class="rearchitecture" id="rearchitecture">
+
+    <div class="wrap">
+
+      <div class="section-header">
+
+        <p class="section-label">
+          What I've done
+        </p>
+
+        <h2>
+          Preparing the documentation for where the product was going.
+        </h2>
+
+      </div>
+
+
+      <div class="project-body">
+
+        <div class="project-stat">
+          Content rearchitecture<br><br>
+          2-year effort<br>
+          16 writers<br>
+          9 doc sets<br>
+          41 books
+        </div>
+
+        <div class="project-copy">
+
+          <p>
+            As our product strategy moved away from individual products
+            toward a more unified platform, the existing documentation
+            structure was becoming a problem. Customers had to understand
+            our products, versions, and management interfaces just to find
+            the right content.
+          </p>
+
+          <p>
+            I led a two-year effort to restructure the experience around
+            what customers were actually trying to accomplish: consolidating
+            fragmented documentation, connecting workflows across products,
+            and creating a common information architecture that could work
+            across search, product, support, and the docs site.
+          </p>
+
+          <p>
+            We started the work ahead of the product transition, so the
+            documentation architecture was ready for where the product was
+            going rather than catching up afterward. The work was part of
+            the case for my promotion to Director in 2023.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT I KNOW -->
+
+  <section class="know" id="know">
+
+    <div class="wrap">
+
+      <div class="section-header">
+
+        <p class="section-label">
+          What I know
+        </p>
+
+        <h2>
+          Tools + skills.
+        </h2>
+
+      </div>
+
+
+      <div class="skills">
+
+        <div></div>
+
+        <p class="skills-copy">
+          Claude / Claude Code · Cursor · Cody · Gemini · NotebookLM ·
+          <span class="accent">AI-assisted Python</span> ·
+          DITA/XML · Information Architecture · Content Strategy ·
+          Content Governance · UX &amp; Usability ·
+          Technical Content for Humans, AI &amp; SEO
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EXPERIENCE -->
 
   <section class="done" id="done">
 
@@ -654,7 +796,7 @@
       <div class="section-header">
 
         <p class="section-label">
-          What I've done
+          Experience
         </p>
 
         <h2>
@@ -678,7 +820,7 @@
           </h3>
 
           <p>
-            Joined Palo Alto Networks in 2013 and have worked across senior
+            I joined Palo Alto Networks in 2013 and have worked across senior
             individual contributor and management roles, including Principal
             Technical Writer, Technical Writing Manager, Senior Manager, and
             Director.
@@ -722,106 +864,6 @@
           </p>
 
         </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTENT REARCHITECTURE -->
-
-  <section class="rearchitecture">
-
-    <div class="wrap">
-
-      <div class="section-header">
-
-        <p class="section-label">
-          Content rearchitecture
-        </p>
-
-        <h2>
-          Preparing the documentation for where the product was going.
-        </h2>
-
-      </div>
-
-
-      <div class="project-body">
-
-        <div class="project-stat">
-          2-year effort<br>
-          16 writers<br>
-          9 doc sets<br>
-          41 books
-        </div>
-
-        <div class="project-copy">
-
-          <p>
-            As our product strategy moved away from individual products
-            toward a more unified platform, the existing documentation
-            structure was becoming a problem. Customers had to understand
-            our products, versions, and management interfaces just to find
-            the right content.
-          </p>
-
-          <p>
-            I led a two-year effort to restructure the experience around
-            what customers were actually trying to accomplish: consolidating
-            fragmented documentation, connecting workflows across products,
-            and creating a common information architecture that could work
-            across search, product, support, and the docs site.
-          </p>
-
-          <p>
-            We started the work ahead of the product transition. That meant
-            the documentation architecture was ready for where the product
-            was going rather than catching up afterward. The work was part
-            of the case for my promotion to Director in 2023.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- WHAT I KNOW -->
-
-  <section class="know" id="know">
-
-    <div class="wrap">
-
-      <div class="section-header">
-
-        <p class="section-label">
-          What I know
-        </p>
-
-        <h2>
-          Tools + skills.
-        </h2>
-
-      </div>
-
-
-      <div class="skills">
-
-        <div></div>
-
-        <p class="skills-copy">
-          Claude / Claude Code · Cursor · Cody · Gemini · NotebookLM ·
-          <span class="accent">AI-assisted Python</span> ·
-          DITA/XML · Information Architecture · Content Strategy ·
-          Content Governance · UX &amp; Usability ·
-          Technical Content for Humans, AI &amp; SEO
-        </p>
 
       </div>
 
@@ -895,7 +937,8 @@
       <div class="footer-bottom">
 
         <div>
-          Dublin, Ireland
+          Dublin, Ireland ·
+          <a href="mailto:ceenolan@gmail.com">ceenolan@gmail.com</a>
         </div>
 
         <div class="credit">
