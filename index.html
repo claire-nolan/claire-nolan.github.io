@@ -187,6 +187,31 @@
       letter-spacing: -.05em;
     }
 
+    /* MY ROLE TODAY */
+
+    .role {
+      background: var(--cream);
+    }
+
+    .role-body {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 70px;
+      padding: 52px 0 72px;
+      border-top: 1px solid var(--black);
+    }
+
+    .role-copy {
+      max-width: 900px;
+    }
+
+    .role-copy p {
+      max-width: 850px;
+      margin: 0 0 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     /* WHAT I'M WORKING ON */
 
     .working {
@@ -247,7 +272,7 @@
       font-weight: 500;
     }
 
-    /* CONTENT REARCHITECTURE */
+    /* EARLIER PROJECT */
 
     .rearchitecture {
       background: var(--black);
@@ -428,6 +453,7 @@
 
       .hero-bottom,
       .section-header,
+      .role-body,
       .work-item,
       .project-body,
       .skills,
@@ -448,14 +474,15 @@
         padding: 62px 0 42px;
       }
 
-      .work-item {
-        gap: 17px;
-        padding: 35px 0 43px;
-      }
-
+      .role-body,
       .project-body,
       .experience-item {
         gap: 28px;
+      }
+
+      .work-item {
+        gap: 17px;
+        padding: 35px 0 43px;
       }
 
       .skills {
@@ -474,7 +501,6 @@
   </style>
 </head>
 
-
 <body>
 
   <!-- HERO -->
@@ -486,11 +512,11 @@
       <div>Claire Nolan</div>
 
       <div class="nav-links">
-        <a href="#working">What I'm working on</a>
-        <a href="#rearchitecture">Selected work</a>
+        <a href="#role">My role today</a>
+        <a href="#working">Current work</a>
+        <a href="#rearchitecture">Earlier project</a>
         <a href="#know">What I know</a>
         <a href="#done">Experience</a>
-        <a href="#education">Education</a>
       </div>
 
     </nav>
@@ -548,7 +574,59 @@
   <div class="pink-strip"></div>
 
 
-  <!-- WHAT I'M WORKING ON -->
+  <!-- MY ROLE TODAY -->
+
+  <section class="role" id="role">
+
+    <div class="wrap">
+
+      <div class="section-header">
+
+        <p class="section-label">
+          My role today
+        </p>
+
+        <h2>
+          I lead content strategy and the shift to
+          <span class="pink">AI-driven and automated documentation.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="role-body">
+
+        <div></div>
+
+        <div class="role-copy">
+
+          <p>
+            My role spans documentation strategy, information architecture,
+            content quality and governance, and the systems and automation
+            that support them. I set standards for the work my team produces,
+            while also working directly on the tooling and workflows that
+            help us apply those standards at scale.
+          </p>
+
+          <p>
+            Increasingly, that means using AI to connect documentation more
+            directly to product, support, customer feedback, and other source
+            knowledge; automate review and maintenance; and build systems
+            that can identify and eventually remediate content problems.
+            I work closely with engineering and the teams building our
+            documentation tooling.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT I'M WORKING ON NOW -->
 
   <section class="working" id="working">
 
@@ -557,11 +635,11 @@
       <div class="section-header">
 
         <p class="section-label">
-          What I'm working on
+          Current work
         </p>
 
         <h2>
-          Some of the things I'm working on with AI in documentation.
+          What I'm working on now.
         </h2>
 
       </div>
@@ -686,7 +764,7 @@
   </section>
 
 
-  <!-- SELECTED WORK -->
+  <!-- EARLIER PROJECT HIGHLIGHT -->
 
   <section class="rearchitecture" id="rearchitecture">
 
@@ -695,7 +773,7 @@
       <div class="section-header">
 
         <p class="section-label">
-          What I've done
+          Earlier project highlight
         </p>
 
         <h2>
